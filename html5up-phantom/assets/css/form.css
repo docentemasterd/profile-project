@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+body, input, select, textarea, button {
+		color: #585858;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.75;
+	}
+
+@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 14pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+#headerpresupuesto{
+	background-color: #e3e6ea;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#titlepresupuesto{
+	padding: 10px;
+	margin-left: 2em;
+}
+
+#formpresupuesto{
+	margin: 2em;
+}
+
+input, select, button{
+	margin: 1em;
+}
+
+p,h3{
+	margin-left: 1em;
+}
+
+p{
+	font-style: italic;
+	font-size: 16;
+}
+
+#email{
+	padding-right: 200px;
+}
+
+#Tiempo{
+	width: 50%;
+}
