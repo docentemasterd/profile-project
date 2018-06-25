@@ -1,60 +1,68 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+
+<head>
 	<title>Portfolio Marco Perrullo</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="robots" content="index,follow"/>
-		<meta name="author" content-"Marco Perrullo">
-		<meta name="keywords" content="programador,programación,Portfolio,Marco Perrullo,desarrollador,desarrollo web">
-		<meta name="revisit-after" content="7 days">
-		<meta name="description" content="Mi portfolio como programador y desarrollador web, donde podr'as solicitar tu presupuesto.">
-		<link rel="stylesheet" href="assets/css/form.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="index,follow" />
+	<meta name="author" content- "Marco Perrullo">
+	<meta name="keywords" content="programador,programación,Portfolio,Marco Perrullo,desarrollador,desarrollo web">
+	<meta name="revisit-after" content="7 days">
+	<meta name="description" content="Mi portfolio como programador y desarrollador web, donde podr'as solicitar tu presupuesto.">
+	<link rel="stylesheet" href="assets/css/form.css" />
+
 	<body>
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<div id="headerpresupuesto">
-					<h1 id="titlepresupuesto">PRESUPUESTO</h1>
-				</div>
+		<div id="wrapper">
+			<div id="headerpresupuesto">
+				<h1 id="titlepresupuesto">PRESUPUESTO</h1>
+			</div>
 
-				<!-- Main -->
-					<div>
-						<form id="formpresupuesto">
-							<input type="textarea" name="Nombre" placeholder="Nombre" required>
-							<input type="textarea" name="Apellidos" placeholder="Apellido">
-							<input type="textarea" name="Apellidos" placeholder="Apellido" required></br>
-							<input type="tel" name="telefono" placeholder="+34622222222" required>
-							<input id="email" type="textarea" name="email" placeholder="Email" required></br>
-							<select id="select1">
-								<option value="" >Elige tu tipo de pagina...</option>
-								<option value="500" id="Sencilla">Sencilla</option>
-								<option value="800" id="Normal">Normal</option>
-								<option value="1200" id="Personalizada">Personalizada</option>
-							</select></br>
-							<select id="select2">
-								<option value="" >Elige plazo...</option>
-								<option value="0.95" id="1">1</option>
-								<option value="0.90" id="2">2</option>
-								<option value="0.85" id="3">3</option>
-								<option value="0.80" id="4">4</option>
-							</select></br>
-							<p>Agrega extras a tu pagina web:</p>
-							<input id="galeria" type="checkbox" name="extra" value="400">Galeria
-							<input id="redes" type="checkbox" name="extra" value="400">Redes sociales
-							<input id="ecommerce" type="checkbox" name="extra" value="400">eCommerce
-							<input id="formularios" type="checkbox" name="extra" value="400">formularios
-							<h3>Presupuesto estimado:</h3></br>
-							<table>
-								<tr class="estimacion">
-									<input type="textarea" name="estimacion" id="total" readonly="">
-								</tr>
-							</table>
-							<p>(Recuerda que este presupuesto es estimado y el valor final puede ser diferente del indicado)</p>
-							<button id="Calcular">Enviar</button>
-						</form>
-					</div>
+			<!-- Main -->
+			<div>
+				<form id="formpresupuesto">
+					<input type="textarea" name="Nombre" placeholder="Nombre" required>
+					<input type="textarea" name="Apellidos" placeholder="Apellido">
+					<input type="textarea" name="Apellidos" placeholder="Apellido" required>
+					</br>
+					<input type="tel" name="telefono" placeholder="+34622222222" required>
+					<input id="email" type="textarea" name="email" placeholder="Email" required>
+					</br>
+					<select id="select1">
+						<option value="">Elige tu tipo de pagina...</option>
+						<option value="500" id="Sencilla">Sencilla</option>
+						<option value="800" id="Normal">Normal</option>
+						<option value="1200" id="Personalizada">Personalizada</option>
+					</select>
+					</br>
+					<select id="select2">
+						<option value="">Elige plazo...</option>
+						<option value="1" id="0">Para ayer...</option>
+						<option value="0.95" id="1">1 mes</option>
+						<option value="0.90" id="2">2 meses</option>
+						<option value="0.85" id="3">3 meses</option>
+						<option value="0.80" id="4">4 meses</option>
+					</select>
+					</br>
+					<p>Agrega extras a tu pagina web:</p>
+					<input class="extras" id="galeria" type="checkbox" name="extra" value="400">Galeria
+					<input class="extras" id="redes" type="checkbox" name="extra" value="400">Redes sociales
+					<input class="extras" id="ecommerce" type="checkbox" name="extra" value="400">eCommerce
+					<input class="extras" id="formularios" type="checkbox" name="extra" value="400">formularios
+					<h3>Presupuesto estimado:</h3>
+					</br>
+					<table>
+						<tr class="estimacion">
+							<input type="textarea" name="estimacion" id="total" readonly>
+						</tr>
+					</table>
+					<p>(Recuerda que este presupuesto es estimado y el valor final puede ser diferente del indicado)</p>
+					<button id="Calcular">Enviar</button>
+				</form>
+			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
@@ -62,4 +70,5 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
