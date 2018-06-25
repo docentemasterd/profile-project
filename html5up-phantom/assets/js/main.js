@@ -211,13 +211,15 @@ $(document).ready(function () {
 		/* Reseteamos el segundo select si estuviera activo  */
 		var select = $('#select2');
 		select.val($('option:first', select).val());
+		$('.extras:checked').prop('checked', false);  // Deseleccionamos los checks
 		/*  Calculamos el total sacando el valor del primer select */
 		var precioWeb = $("select[id=select1]").val();
-		alert(precioWeb);
 		$("#total").val(precioWeb);
+		alert("El precio base de la Web seleccionada es de: " + precioWeb + "€.");
 	});
 
 	$("#select2").change(function () {
+		$('.extras:checked').prop('checked', false);  // Deseleccionamos los checks
 		var totalWeb = $("select[id=select1").val();
 		if (totalWeb == "") {
 			alert("Debes seleccionar un tipo de página.");
